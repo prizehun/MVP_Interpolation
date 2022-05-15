@@ -307,6 +307,9 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
         xv=xv.unsqueeze(0);yv=yv.unsqueeze(0)
         xv=xv.view(-1,1); yv=yv.view(-1,1)
         
+        del x1; del x2; del x3; del x4; del y1; del y2; del y3; del y4 #memory release
+        del z1; del z2; del z3; del z4
+        
         #print(xv)
         #print(torch.cat([xv,yv],dim=1))
         #print(per_camera_indices)
