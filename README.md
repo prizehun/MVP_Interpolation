@@ -32,5 +32,7 @@ mini_val = ['scene-0103', 'scene-0916']
 | Bilinear | 0.3453 | 0.5076 | 0.5226 | 0.7755 | 0.8217 | 0.4044 | 0.3695 |
 | Bilinear + z1 | 0.3771 | 0.5165 | 0.5162 | 0.8600 | 0.9765 | 0.3714 | 0.3645 |
 | Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+<br/><br/>
+mini_val = ['scene-0061', 'scene-0553']   
 ## Reference
 https://github.com/tianweiy/MVP
