@@ -52,5 +52,25 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 | Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+
+<br/><br/>
+**mini_val** = ['scene-0796', 'scene-1077']   
+| Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+
+<br/><br/>
+**mini_val** = ['scene-1094', 'scene-1100']   
+| Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 ## Reference
 https://github.com/tianweiy/MVP
