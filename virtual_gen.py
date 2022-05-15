@@ -142,19 +142,8 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
     virtual_points = virtual_points[mask] # mask2 is larger than mask
     #virtual_points2 = virtual_points[mask2]
     #print(nearest_indices)
-    virtual_point_camera_ids = virtual_point_camera_ids[mask] # mask2 is larger than mask
-    #virtual_point_camera_ids2 = virtual_point_camera_ids[mask2]
-
-    #interpolation mask 
-    #mask2 = nearest_dist4 - nearest_dist < 2
-
-    #nearest_indices = indices[nearest_indices[mask2]]
-    #nearest_indices2 = indices[nearest_indices2[mask2]]
-    #nearest_indices3 = indices[nearest_indices3[mask2]]
-    #nearest_indices4 = indices[nearest_indices4[mask2]]
-    #virtual_points = virtual_points[mask2]
-    #virtual_point_camera_ids = virtual_point_camera_ids[mask2]
-
+    virtual_point_camera_ids = virtual_point_camera_ids[mask]
+    
     all_virtual_points = [] 
     all_real_points = [] 
     all_point_labels = []
@@ -169,18 +158,11 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
         per_camera_indices2 = nearest_indices2[camera_mask]
         per_camera_indices3 = nearest_indices3[camera_mask]
         per_camera_indices4 = nearest_indices4[camera_mask]
-
-        #print(per_camera_indices.size())
-        #print(per_camera_indices2.size())
-        #print(per_camera_indices3.size())
-        #print(per_camera_indices4.size())
         
         z1=points.reshape(-1, 5)[per_camera_indices, 2].reshape(1, -1)
         z2=points.reshape(-1, 5)[per_camera_indices2, 2].reshape(1, -1)
         z3=points.reshape(-1, 5)[per_camera_indices3, 2].reshape(1, -1)
         z4=points.reshape(-1, 5)[per_camera_indices4, 2].reshape(1, -1)
-
-        #print(z1)
 
         z1=z1.tolist()
         z2=z2.tolist()
@@ -285,11 +267,6 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
             if cross%2 == 0 :
                 del_inx.append(j)
                 #z.append((z1[0][j]+z2[0][j])/2)
-        
-        #print(xv)
-        #print(per_camera_virtual_points[:,:2])
-        #print(len(xv))
-        #print(len(del_inx))
 
         #remove index out of range
         per_camera_virtual_indices=per_camera_indices.tolist() # my code to delete index
@@ -301,7 +278,7 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
             del per_camera_virtual_indices[k]
             ktemp +=1
 
-        #per_camera_virtual_indices=torch.tensor(per_camera_virtual_indices, dtype=torch.long, device='cuda:0')
+        per_camera_virtual_indices=torch.tensor(per_camera_virtual_indices, dtype=torch.long, device='cuda:0')
         xv=torch.tensor(xv, dtype=torch.float32, device='cuda:0')
         yv=torch.tensor(yv, dtype=torch.float32, device='cuda:0')
         xv=xv.unsqueeze(0);yv=yv.unsqueeze(0)
@@ -309,19 +286,11 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
         
         del x1; del x2; del x3; del x4; del y1; del y2; del y3; del y4 #memory release
         del z1; del z2; del z3; del z4
-        
-        #print(xv)
-        #print(torch.cat([xv,yv],dim=1))
-        #print(per_camera_indices)
-        #print(per_camera_virtual_indices)
-        #print(per_camera_indices4.size())
-        #print(point_labels)
-        #per_camera_virtual_points[:,0]=xv
+        del per_camera_indices2; del per_camera_indices3; del per_camera_indices4
     
         z=torch.tensor(z, dtype=torch.float32, device='cuda:0')
         z=z.unsqueeze(0)
         #z=torch.as_tensor(z, dtype=torch.float32, device='cuda:0')
-        #print(z)
 
         #r1=points.reshape(-1, 5)[per_camera_indices, :2] # real point x1, y1
         #r2=points.reshape(-1, 5)[per_camera_indices2, :2] # real point x2, y2
