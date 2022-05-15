@@ -117,8 +117,6 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
 
     if len(real_points) == 0:
         return None 
-    #real_point = [0, x , y, instance_ids]
-    #virtual = [offsets, 0, instance_ids]
     dist = torch.norm(virtual_points.unsqueeze(1) - real_points.unsqueeze(0), dim=-1) #estimate distance, unsqueeze(0)->first channel add
     sorted_dist, sorted_indices = torch.sort(dist, dim=1)
     #nearest_dist, nearest_indices = torch.min(dist, dim=1) #search row
@@ -131,8 +129,7 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
     nearest_dist4=sorted_dist[:,3]
     nearest_indices4=sorted_indices[:,3]
     mask = nearest_dist4 < dist_thresh # & (nearest_dist4 - nearest_dist < 2)
-    #mask2 = nearest_dist2 < dist_thresh
-    #print(nearest_indices)
+    
     indices = valid_mask.nonzero(as_tuple=False).reshape(-1)
 
     nearest_indices = indices[nearest_indices[mask]]
@@ -140,8 +137,7 @@ def add_virtual_mask(masks, labels, points, raw_points, num_virtual=50, dist_thr
     nearest_indices3 = indices[nearest_indices3[mask]]
     nearest_indices4 = indices[nearest_indices4[mask]]
     virtual_points = virtual_points[mask] # mask2 is larger than mask
-    #virtual_points2 = virtual_points[mask2]
-    #print(nearest_indices)
+
     virtual_point_camera_ids = virtual_point_camera_ids[mask]
     
     all_virtual_points = [] 
