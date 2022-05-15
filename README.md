@@ -1,5 +1,12 @@
 # MVP_interpolation
 Multi modal virtual point interpolation
+## Create Data labels
+```
+# nuScenes
+python tools/create_data.py nuscenes_data_prep --root_path=NUSCENES_TRAINVAL_DATASET_ROOT --version="v1.0-mini" --nsweeps=10 --virtual True 
+```
+version="v1.0-trainval" also can be   
+create train and val labels data
 ## Generate Virtual Points
 ```
 python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  MODEL.WEIGHTS centernet2_checkpoint.pth 
