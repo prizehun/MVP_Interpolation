@@ -39,8 +39,17 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
-| Linear Interpolation z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear | 0.6022 | 0.2999 | 0.2390 | 0.5890 | 1.3650 | 0.6455 | 0.5238 |
+| Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+
+<br/><br/>
+**mini_val** = ['scene-0655', 'scene-0757']   
+| Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 ## Reference
