@@ -1,5 +1,5 @@
 # MVP_interpolation
-Multi modal virtual point interpolation
+Multimodal Virtual Point Interpolation
 ## Create Data labels
 ```
 # nuScenes
