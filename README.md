@@ -24,6 +24,10 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 **mini data set**   
 mini_train = ['scene-0061', 'scene-0553', 'scene-0655', 'scene-0757', 'scene-0796', 'scene-1077', 'scene-1094', 'scene-1100']   
 mini_val = ['scene-0103', 'scene-0916']   
-
+| 드라마 제목 | 주연 배우 | 방영일 |
+|:----------|:----------:|----------:|
+| **호텔 델루나** | 이지은, 여진구 | ~~2019.07.13. ~ 2019.09.01.~~ |
+| 타인은 지옥이다 | 임시완, 이동욱, 이현욱, 이정은 | 2019.08.31. ~ |
+| 멜로가 체질 | 천우희, 안재홍, 전여빈, 공명 | 2019.08.09. ~ |
 ## Reference
 https://github.com/tianweiy/MVP
