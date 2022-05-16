@@ -41,7 +41,7 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 | Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear | 0.6022 | 0.2999 | 0.2390 | 0.5890 | 1.3650 | 0.6455 | 0.5238 |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
-| Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Bilinear + Center of z1 and z2 | **0.6581** | 0.2654 | 0.2265 | 0.6304 | 0.8880 | 0.5860 | **0.5694** |
 
 <br/><br/>
 **mini_val** = ['scene-0655', 'scene-0757']   
