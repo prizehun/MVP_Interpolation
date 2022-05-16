@@ -1,4 +1,4 @@
-# MVP_interpolation
+# MVP_Interpolation
 Multimodal Virtual Point Interpolation
 ## Create Data labels
 ```
