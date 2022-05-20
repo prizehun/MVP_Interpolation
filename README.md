@@ -26,6 +26,7 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 **mini_val** = ['scene-0103', 'scene-0916']   
 | Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| No Virutal | 0.2306 | 0.5476 | 0.5076 | 0.9312 | 0.5974 | 0.3147 | 0.3254 |
 | Nearest z1 | 0.3832 | 0.5067 | **0.5116** | 0.9215 | 1.1191 | **0.3615** | 0.3615 |
 | Center of z1 and z2 | **0.3894** | 0.5053 | 0.5193 | 0.9097 | 0.9507 | 0.3745 | 0.3688 |
 | Linear Interpolation z1 and z2 | 0.3455 | 0.5103 | 0.5214 | 0.9946 | **0.7867** | 0.3742 | 0.3540 |
@@ -37,6 +38,7 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 **mini_val** = ['scene-0061', 'scene-0553']   
 | Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| No Virutal | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Nearest z1 | 0.6640 | 0.3122 | 0.2431 | 0.6934 | 1.3206 | 0.5517 | 0.5519 |
 | Center of z1 and z2 | **0.6695** | 0.2812 | 0.2314 | 0.4937 | 1.1579 | 0.5983 | **0.5743** |
 | Plane + Nearest z1 | 0.6654 | 0.2869 | 0.2317 | 0.5674 | 1.1466 | 0.5929 | 0.5648 |
