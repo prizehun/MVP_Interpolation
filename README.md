@@ -71,7 +71,7 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 **mini_val** = ['scene-1094', 'scene-1100']   
 | Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-| Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Nearest z1 | 0.3067 | 0.6179 | 0.6022 | 0.8060 | 1.0189 | 0.4929 | 0.3015 |
 | Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
