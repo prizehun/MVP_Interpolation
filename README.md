@@ -72,7 +72,7 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 | Interpolation Method | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | Nearest z1 | 0.3067 | 0.6179 | 0.6022 | 0.8060 | 1.0189 | 0.4929 | 0.3015 |
-| Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+| Center of z1 and z2 | 0.2853 | 0.6257 | 0.6014 | 0.7908 | 0.9941 | 0.5025 | 0.2912 |
 | Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
