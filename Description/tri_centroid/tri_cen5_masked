@@ -1,0 +1,43 @@
+mAP: 0.3077
+mATE: 0.6122
+mASE: 0.6011
+mAOE: 0.8136
+mAVE: 1.0093
+mAAE: 0.5440
+NDS: 0.2968
+Eval time: 1.8s
+
+Per-class results:
+Object Class	AP	ATE	ASE	AOE	AVE	AAE
+car	0.815	0.217	0.183	0.588	1.022	0.573
+truck	0.000	1.000	1.000	1.000	1.000	1.000
+bus	0.981	0.135	0.113	0.095	0.520	0.240
+trailer	0.000	1.000	1.000	1.000	1.000	1.000
+construction_vehicle	0.000	1.000	1.000	1.000	1.000	1.000
+pedestrian	0.829	0.173	0.344	0.956	0.712	0.347
+motorcycle	0.422	0.358	0.219	0.706	2.816	0.193
+bicycle	0.030	0.240	0.151	0.977	0.004	0.000
+traffic_cone	0.000	1.000	1.000	nan	nan	nan
+barrier	0.000	1.000	1.000	1.000	nan	nan
+Evaluation nusc: Nusc v1.0-mini Evaluation
+car Nusc dist AP@0.5, 1.0, 2.0, 4.0
+69.34, 82.25, 86.43, 88.10 mean AP: 0.8153110864048378
+truck Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+construction_vehicle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+bus Nusc dist AP@0.5, 1.0, 2.0, 4.0
+94.33, 99.37, 99.37, 99.37 mean AP: 0.9810880106327521
+trailer Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+barrier Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+motorcycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+21.58, 46.60, 49.88, 50.62 mean AP: 0.4217015768190771
+bicycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+3.03, 3.03, 3.03, 3.05 mean AP: 0.030358355903560615
+pedestrian Nusc dist AP@0.5, 1.0, 2.0, 4.0
+81.08, 82.07, 83.15, 85.19 mean AP: 0.8287302247631252
+traffic_cone Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+

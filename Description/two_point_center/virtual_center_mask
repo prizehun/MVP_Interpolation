@@ -1,0 +1,47 @@
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: work_dirs/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual
+mAP: 0.3329
+mATE: 0.5248
+mASE: 0.5084
+mAOE: 0.9210
+mAVE: 0.8559
+mAAE: 0.4109
+NDS: 0.3444
+Eval time: 3.3s
+
+Per-class results:
+Object Class	AP	ATE	ASE	AOE	AVE	AAE
+car	0.758	0.271	0.182	0.569	0.284	0.145
+truck	0.470	0.269	0.206	0.179	0.272	0.178
+bus	0.466	0.642	0.215	0.096	2.832	0.155
+trailer	0.000	1.000	1.000	1.000	1.000	1.000
+construction_vehicle	0.000	1.000	1.000	1.000	1.000	1.000
+pedestrian	0.835	0.189	0.299	0.954	0.695	0.170
+motorcycle	0.335	0.307	0.402	1.295	0.572	0.399
+bicycle	0.000	0.482	0.293	2.197	0.192	0.240
+traffic_cone	0.465	0.088	0.487	nan	nan	nan
+barrier	0.000	1.000	1.000	1.000	nan	nan
+Evaluation nusc: Nusc v1.0-mini Evaluation
+car Nusc dist AP@0.5, 1.0, 2.0, 4.0
+55.32, 74.05, 85.30, 88.69 mean AP: 0.7584157634573319
+truck Nusc dist AP@0.5, 1.0, 2.0, 4.0
+35.54, 47.16, 50.65, 54.65 mean AP: 0.4699805663885609
+construction_vehicle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+bus Nusc dist AP@0.5, 1.0, 2.0, 4.0
+10.64, 34.71, 57.66, 83.21 mean AP: 0.46555719478044544
+trailer Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+barrier Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+motorcycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+22.82, 34.69, 36.42, 40.16 mean AP: 0.3352057404769629
+bicycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+pedestrian Nusc dist AP@0.5, 1.0, 2.0, 4.0
+79.77, 82.21, 84.20, 88.00 mean AP: 0.835440139345532
+traffic_cone Nusc dist AP@0.5, 1.0, 2.0, 4.0
+45.98, 46.63, 46.63, 46.63 mean AP: 0.46471578076700565
+

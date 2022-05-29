@@ -1,0 +1,46 @@
+python -m torch.distributed.launch --nproc_per_node=1 ./tools/dist_test.py configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual.py --work_dir work_dirs/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual/ --checkpoint work_dirs/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual/latest.pth
+
+Saving metrics to: ./work_dirs/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual/
+mAP: 0.3832
+mATE: 0.5067
+mASE: 0.5116
+mAOE: 0.9215
+mAVE: 1.1191
+mAAE: 0.3615
+NDS: 0.3615
+Eval time: 3.6s
+
+Per-class results:
+Object Class	AP	ATE	ASE	AOE	AVE	AAE
+car	0.763	0.283	0.194	0.638	0.332	0.202
+truck	0.579	0.216	0.194	0.497	0.223	0.105
+bus	0.487	0.586	0.233	0.586	3.689	0.098
+trailer	0.000	1.000	1.000	1.000	1.000	1.000
+construction_vehicle	0.000	1.000	1.000	1.000	1.000	1.000
+pedestrian	0.832	0.196	0.281	1.011	0.755	0.193
+motorcycle	0.469	0.315	0.409	1.310	0.188	0.202
+bicycle	0.006	0.353	0.325	1.252	1.766	0.091
+traffic_cone	0.696	0.119	0.482	nan	nan	nan
+barrier	0.000	1.000	1.000	1.000	nan	nan
+Evaluation nusc: Nusc v1.0-mini Evaluation
+car Nusc dist AP@0.5, 1.0, 2.0, 4.0
+54.95, 73.15, 86.96, 90.08 mean AP: 0.7628558427792672
+truck Nusc dist AP@0.5, 1.0, 2.0, 4.0
+52.84, 55.46, 59.49, 63.65 mean AP: 0.5786002006775328
+construction_vehicle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+bus Nusc dist AP@0.5, 1.0, 2.0, 4.0
+6.82, 42.39, 67.88, 77.60 mean AP: 0.48674154854571544
+trailer Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+barrier Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.00, 0.00, 0.00, 0.00 mean AP: 0.0
+motorcycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+27.86, 49.31, 51.92, 58.54 mean AP: 0.4690872764151802
+bicycle Nusc dist AP@0.5, 1.0, 2.0, 4.0
+0.05, 0.36, 0.36, 1.55 mean AP: 0.005826000490203957
+pedestrian Nusc dist AP@0.5, 1.0, 2.0, 4.0
+78.78, 82.42, 84.02, 87.74 mean AP: 0.8324130882897884
+traffic_cone Nusc dist AP@0.5, 1.0, 2.0, 4.0
+69.57, 69.57, 69.57, 69.80 mean AP: 0.6962929387128536
+
