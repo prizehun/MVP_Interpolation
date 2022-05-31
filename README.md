@@ -88,6 +88,6 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 |:----------:|:----------:|:----------:|
 | Nearest z1 | 0.47308 | 0.42826 |
 | Center of z1 and z2 | 0.46592 | 0.43838 |
-| Tri_centroid | 0. | 0.42826 |
+| Tri_centroid | 0. | 0.43746 |
 ## Reference
 https://github.com/tianweiy/MVP
