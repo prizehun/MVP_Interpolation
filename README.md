@@ -80,5 +80,13 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 | Bilinear | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Nearest z1 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
 | Bilinear + Center of z1 and z2 | 0. | 0. | 0. | 0. | 0. | 0. | 0. |
+
+<br/><br/>
+**Overall mAP, NDS**
+| Interpolation Method | mAP | NDS |
+|:----------:|:----------:|:----------:|
+| Nearest z1 | 0. | 0.42826 |
+| Center of z1 and z2 | 0. | 0.42826 |
+| Tri_centroid | 0. | 0.42826 |
 ## Reference
 https://github.com/tianweiy/MVP
