@@ -62,7 +62,6 @@ python ./tools/dist_test.py ./configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fi
 | Nearest neighbor | 0.5404 | 0.4203 | 0.3904 | 0.6496 | 1.1804 | 0.2914 | 0.4950 |
 | Midpoint of z1 and z2 | 0.5177 | 0.4210 | **0.3795** | **0.5105** | **0.7955** | **0.2548** | 0.5227 |
 | Centroid of a triangle | **0.5816** | **0.4047** | 0.3809 | 0.5159 | 1.0277 | 0.3025 | **0.5304** |
-| Plane + Nearest z1 | 0.5305 | 0.4011 | 0.3706 | 0.5708 | 0.8818 | 0.2907 | 0.5137 |
 
 
 <br/><br/>
