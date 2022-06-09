@@ -11,9 +11,9 @@ create train and val labels data
 ```
 python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  MODEL.WEIGHTS centernet2_checkpoint.pth 
 ```
-You can use virtual_gen_original.py to creat nearest neighbor virtual point   
-You can use virtual_gen_center.py to creat midpoint virtual point   
-You can use virtual_gen_original.py to creat Centroid of a triangle virtual point   
+You can use **virtual_gen_original.py** to creat **nearest neighbor** virtual point   
+You can use **virtual_gen_center.py** to creat **midpoint** virtual point   
+You can use **virtual_gen_tri_cen.py** to creat **Centroid of a triangle** virtual point   
 ## Train & Test
 Train for centerpoint_voxelnet using one gpu
 ```
